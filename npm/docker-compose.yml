@@ -4,9 +4,9 @@ services:
     image: 'jc21/nginx-proxy-manager:latest' #最新版npm
     restart: unless-stopped
     ports:
-      - '80:80'
-      - '81:81'
-      - '443:443'
+      - '1088:80'
+      - '1089:81'
+      - '1090:443'
     volumes:
       - ./data:/data
       - ./letsencrypt:/etc/letsencrypt
